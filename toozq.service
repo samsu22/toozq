@@ -1,0 +1,12 @@
+[Unit]
+Description=toozq Service
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/usr/local/toozq/
+ExecStart=/usr/local/toozq/toozq
+
+[Install]
+WantedBy=multi-user.target
